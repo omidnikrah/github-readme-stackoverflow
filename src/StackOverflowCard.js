@@ -1,6 +1,6 @@
 const { imgToDataURL } = require('./utils');
 
-const ArticleCard = async (data) => {
+const StackOverflowCard = async (data) => {
   const thumbnailBase64 = await imgToDataURL(data.profile_image);
   const namePosition = (210 - (data.display_name.length * 8.5)) / 2;
 
@@ -71,4 +71,4 @@ const ArticleCard = async (data) => {
   `;
 };
 
-module.exports = ArticleCard;
+module.exports = StackOverflowCard;
