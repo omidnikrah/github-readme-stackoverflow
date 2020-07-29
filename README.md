@@ -8,13 +8,13 @@
 
 Copy paste following markdown into your markdown content, and that's it. Easy Easy Tammam Tammam!
 
-Change the `?username=` value to your StackOverflow's username.
+Change the `?userID=` value to your StackOverflow's username.
 
 ```md
-[![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?username=omidnikrah)](https://stackoverflow.com/users/6558042/omid-nikrah)
+[![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042)](https://stackoverflow.com/users/6558042/omid-nikrah)
 ```
 
-[![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?username=omidnikrah)](https://stackoverflow.com/users/6558042/omid-nikrah)
+[![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042)](https://stackoverflow.com/users/6558042/omid-nikrah)
 
 ## Deploy your own
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/omidnikrah/github-readme-stackoverflow)
