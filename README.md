@@ -21,7 +21,7 @@ Change the `?userID=` value to your StackOverflow's userID.
 |    Name    |           Description           |        Default value       |
 | ---------- | ------------------------------- | -------------------------- |
 | userID   | Your StackOverflow userID            | REQUIRED                |
-| theme      | Theme of StackOverflow card (light or dark)      | 'light'                          |
+| theme      | Theme of StackOverflow card (light or dark)      | light                          |
 
 ## Deploy your own
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/omidnikrah/github-readme-stackoverflow)
