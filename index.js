@@ -5,7 +5,7 @@ const StackOverflowCard = require('./src/StackOverflowCard');
 
 http.createServer(async (req, res) => {
   const reqURL = url.parse(req.url, true);
-  const { userID } = reqURL.query;
+  const { userID, theme = 'light' } = reqURL.query;
 
   if (!userID) {
     res.write(JSON.stringify({error: 'Add your StackOverflow userID as query string'}));
@@ -22,7 +22,7 @@ http.createServer(async (req, res) => {
     return;
   }
 
-  const result = await StackOverflowCard(json.items[0]);
+  const result = await StackOverflowCard(json.items[0], theme);
 
   res.setHeader('Cache-Control', 'private, no-cache, no-store, must-revalidate');
   res.setHeader('Expires', '-1');
