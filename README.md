@@ -1,8 +1,12 @@
+<br>
+
 <p align="center">
   <img width="120px" src="https://raw.githubusercontent.com/omidnikrah/github-readme-stackoverflow/master/stackoverflow.svg" />
   <h2 align="center">GitHub Readme StackOverflow</h2>
   <p align="center">Show your StackOverflow profile status on your readmes!</p>
 </p>
+
+<br>
 
 ### Usage
 
@@ -22,6 +26,14 @@ Change the `?userID=` value to your StackOverflow's userID.
 | ---------- | ------------------------------- | -------------------------- |
 | userID   | Your StackOverflow userID            | REQUIRED                |
 | theme      | Theme of StackOverflow card (light or dark)      | light                          |
+
+<br>
+
+## Contributors
+- [Omid Nikrah](https://github.com/omidnikrah)
+- [Soroush Chehresa](https://github.com/soroushchehresa)
+
+<br>
 
 ## Deploy your own
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/omidnikrah/github-readme-stackoverflow)
