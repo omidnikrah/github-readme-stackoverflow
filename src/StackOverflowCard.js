@@ -24,11 +24,11 @@ const StackOverflowCard = async (data, theme) => {
       </text>
       <text transform="translate(48 231)" stroke-linecap="square" stroke-linejoin="bevel" fill="${isDark ? '#F2F2F3' : '#0f0f0f'}"
         font-family="ArialMT, Arial" font-size="16">
-        <tspan x=".5" y="14">${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</tspan>
+        <tspan x=".5" y="14">${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</tspan>
       </text>
       <text transform="translate(88 231)" stroke-linecap="square" stroke-linejoin="bevel" fill="#ACB2B8"
         font-family="ArialMT, Arial" font-size="12">
-        <tspan x=".5" y="14.5">REPUTATION</tspan>
+        <tspan x="${data.reputation.split('').length * .2}" y="12.5">REPUTATION</tspan>
       </text>
       <path
         d="M21 266h49a3 3 0 013 3v22a3 3 0 01-3 3H21a3 3 0 01-3-3v-22a3 3 0 013-3m1 2h47a2 2 0 012 2v20a2 2 0 01-2 2H22a2 2 0 01-2-2v-20a2 2 0 012-2"
