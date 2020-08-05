@@ -28,7 +28,7 @@ const StackOverflowCard = async (data, theme) => {
       </text>
       <text transform="translate(88 231)" stroke-linecap="square" stroke-linejoin="bevel" fill="#ACB2B8"
         font-family="ArialMT, Arial" font-size="12">
-        <tspan x="${data.reputation.toString().length * 0.45}" y="12.5">REPUTATION</tspan>
+        <tspan x="${data.reputation.toString().length}" y="12.5">REPUTATION</tspan>
       </text>
       <path
         d="M21 266h49a3 3 0 013 3v22a3 3 0 01-3 3H21a3 3 0 01-3-3v-22a3 3 0 013-3m1 2h47a2 2 0 012 2v20a2 2 0 01-2 2H22a2 2 0 01-2-2v-20a2 2 0 012-2"
