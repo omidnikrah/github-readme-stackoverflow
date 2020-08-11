@@ -26,8 +26,9 @@ Change the `?userID=` value to your StackOverflow's userID.
 ## Options
 |    Name    |           Description           |        Default value       |
 | ---------- | ------------------------------- | -------------------------- |
-| userID   | Your StackOverflow userID            | REQUIRED                |
-| theme      | Theme of StackOverflow card (light or dark)      | light                          |
+| userID     | Your StackOverflow userID            | REQUIRED                |
+| theme      | Theme of the StackOverflow card (light or dark)      | light     |
+| layout     | Layout of the StackOverflow card (compact or default) | default |    
 
 <br>
 
