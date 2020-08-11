@@ -1,9 +1,43 @@
 const { imgToDataURL } = require('./utils');
 
-const StackOverflowCard = async (data, theme) => {
+const StackOverflowCard = async (data, theme, layout) => {
   const thumbnailBase64 = await imgToDataURL(data.profile_image);
   const namePosition = (210 - (data.display_name.length * 8.5)) / 2;
   const isDark = theme === 'dark';
+
+  if (layout === 'compact') {
+    return `
+      <svg width="191" height="70" viewBox="0 0 191 70" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" fill-rule="evenodd">
+          <rect stroke="${isDark ? '#4A4E51' : '#eff0f1'}" fill="${isDark ? '#2D2D2D' : '#fff'}" x=".5" y=".5" width="190" height="69" rx="5" />
+          <text font-family="Arial-BoldMT, Arial" font-size="15" font-weight="bold" fill="${isDark ? '#F2F2F3' : '#0f0f0f'}">
+            <tspan x="12" y="23">${data.display_name}</tspan>
+          </text>
+          <text font-family="Arial-BoldMT, Arial" font-size="12" fill="${isDark ? '#F2F2F3' : '#0f0f0f'}">
+            <tspan x="13" y="41">${data.reputation.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</tspan>
+          </text>
+          <g transform="translate(13 48)" fill="#F1B600">
+            <circle cx="3.5" cy="7.5" r="3.5" />
+            <text font-family="Arial-BoldMT, Arial" font-size="12">
+              <tspan x="9" y="11">${data.badge_counts.gold}</tspan>
+            </text>
+          </g>
+          <g transform="translate(38 48)" fill="#9A9B9E">
+            <circle cx="3.5" cy="7.5" r="3.5" />
+            <text font-family="Arial-BoldMT, Arial" font-size="12">
+              <tspan x="9" y="11">${data.badge_counts.silver}</tspan>
+            </text>
+          </g>
+          <g transform="translate(73 48)" fill="#AB825F">
+            <circle cx="3.5" cy="7.5" r="3.5" />
+            <text font-family="Arial-BoldMT, Arial" font-size="12">
+              <tspan x="9" y="11">${data.badge_counts.bronze}</tspan>
+            </text>
+          </g>
+        </g>
+      </svg>
+    `;
+  }
 
   return `
     <svg width="210" height="312" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
