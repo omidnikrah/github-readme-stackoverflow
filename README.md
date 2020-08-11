@@ -21,6 +21,14 @@ Change the `?userID=` value to your StackOverflow's userID.
 [![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042)](https://stackoverflow.com/users/6558042/omid-nikrah)
 [![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042&theme=dark)](https://stackoverflow.com/users/6558042/omid-nikrah)
 
+##### Compact Layout
+
+If you want to have a compact layout, just you need to add `layout=compact` as a parameter. Check out the options.
+
+[![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042&layout=compact)](https://stackoverflow.com/users/6558042/omid-nikrah)
+[![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042&layout=compact&theme=dark)](https://stackoverflow.com/users/6558042/omid-nikrah)
+
+
 <br>
 
 ## Options
