@@ -12,7 +12,7 @@
 
 Copy paste following markdown into your markdown content, and that's it. Easy Easy Tammam Tammam!
 
-Change the `?userID=` value to your StackOverflow's userID.
+Change the `?userID=` value to your StackExchange userID (for the relevant site).
 
 ```md
 [![Omid Nikrah StackOverflow](https://github-readme-stackoverflow.vercel.app/?userID=6558042)](https://stackoverflow.com/users/6558042/omid-nikrah)
@@ -45,7 +45,7 @@ The site name provided as a parameter must be the same as the domain for that si
 ## Options
 |    Name    |           Description           |        Default value       |
 | ---------- | ------------------------------- | -------------------------- |
-| userID     | Your StackOverflow userID            | REQUIRED                |
+| userID     | Your StackExchange userID            | REQUIRED                |
 | theme      | Theme of the StackOverflow card (light or dark)      | light     |
 | layout     | Layout of the StackOverflow card (compact or default) | default |
 | site       | Which StackExchange site to get the data from | stackoverflow |
