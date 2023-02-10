@@ -17,7 +17,7 @@ http.createServer(async (req, res) => {
   const json = await responseArticles.json();
 
   if (!json.items || json.items.length === 0) {
-    res.write(JSON.stringify({error: 'Your stackoverflow userID is not correct'}));
+    res.write(JSON.stringify({error: 'Your userID/site is not valid'}));
     res.end();
     return;
   }
