@@ -59,6 +59,7 @@ The site name provided as a parameter must be the same as the domain for that si
 - [Omid Nikrah](https://github.com/omidnikrah)
 - [Soroush Chehresa](https://github.com/soroushchehresa)
 - [Zohan Subhash](https://github.com/Zo-Bro-23)
+- [Jéf Bueno](https://github.com/jfbueno)
 
 <br>
 
