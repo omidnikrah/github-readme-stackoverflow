@@ -5,7 +5,7 @@ const StackOverflowCard = require('./src/StackOverflowCard');
 
 http.createServer(async (req, res) => {
   const reqURL = url.parse(req.url, true);
-  const { userID, theme = 'light', layout = 'default' } = reqURL.query;
+  const { userID, theme = 'light', layout = 'default', site = 'stackoverflow' } = reqURL.query;
 
   if (!userID) {
     res.write(JSON.stringify({error: 'Add your StackOverflow userID as query string'}));
@@ -13,11 +13,11 @@ http.createServer(async (req, res) => {
     return;
   }
 
-  const responseArticles = await fetch(`https://api.stackexchange.com/2.2/users/${userID}?site=stackoverflow&filter=!--1nZv)deGu1`);
+  const responseArticles = await fetch(`https://api.stackexchange.com/2.2/users/${userID}?site=${site}&filter=!--1nZv)deGu1`);
   const json = await responseArticles.json();
 
   if (!json.items || json.items.length === 0) {
-    res.write(JSON.stringify({error: 'Your stackoverflow userID is not correct'}));
+    res.write(JSON.stringify({error: 'Your userID/site is not valid'}));
     res.end();
     return;
   }
