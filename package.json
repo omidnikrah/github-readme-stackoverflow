@@ -17,6 +17,9 @@
     "url": "https://github.com/omidnikrah/github-readme-medium/issues"
   },
   "homepage": "https://github.com/omidnikrah/github-readme-medium#readme",
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "node-fetch": "^2.6.0"
   }
