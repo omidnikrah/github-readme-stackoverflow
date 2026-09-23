@@ -3,7 +3,7 @@ const url = require('url');
 const fetch = require('node-fetch');
 const StackOverflowCard = require('./src/StackOverflowCard');
 
-http.createServer(async (req, res) => {
+const handler = async (req, res) => {
   const reqURL = url.parse(req.url, true);
   const { userID, theme = 'light', layout = 'default' } = reqURL.query;
 
@@ -31,6 +31,12 @@ http.createServer(async (req, res) => {
 
   res.write(result);
   res.end();
-}).listen(process.env.PORT || 3000, function(){
- console.log("server start at port 3000");
-});
+};
+
+module.exports = handler;
+
+if (require.main === module) {
+  http.createServer(handler).listen(process.env.PORT || 3000, function(){
+   console.log("server start at port 3000");
+  });
+}
